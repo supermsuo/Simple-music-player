@@ -1,0 +1,50 @@
+.sidebar {  
+  width: 40px;  
+  height: 100%;  
+  background-color: #f8f9fa;  
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  padding: 20px;  
+  transition: width 0.5s ease;        /* 添加过渡效果 */  
+  overflow: auto;                          /* 允许侧边栏内容滚动 */  
+}  
+
+.sidebar.collapsed {  
+  width: 220px;                              /* 放大后的宽度 */  
+}  
+
+.sidebar-toggle {  
+  display: none;                                /* 默认隐藏收缩按钮 */  
+  position: absolute;  
+  top: 10px;  
+  right: 10px;  
+  background-color: #f8f9fa;  
+  border: none;  
+  padding: 5px;  
+  cursor: pointer;  
+} 
+
+.sidebar.expanded {  
+  width: 250px;                                    /* 或者你希望的任何宽度 */  
+  transition: width 0.3s ease;               /* 可选的过渡效果 */  
+}
+  
+.main-content {  
+  margin-left: 220px;                           /* 侧边栏宽度 + 侧边栏内边距 */  
+  transition: margin-left 0.3s ease;        /* 添加过渡效果 */  
+}  
+  
+.main-content.sidebar-collapsed {  
+  margin-left: 60px;                               /* 收缩后侧边栏宽度 + 侧边栏内边距 */  
+}
+
+/* 默认情况下，所有歌名都是可见的 */  
+#songList li a {  
+  display: block; /* 或者使用其他适当的显示方式，如inline-block */  
+}  
+  
+/* 当侧边栏收起时，应用.hidden类来隐藏歌名 */  
+#songList li a.hidden {  
+  display: none; /* 隐藏元素 */  
+}

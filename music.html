@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>suoear播放器</title>
   <style>
-	body {
-	background-image: url('png/liuying.png');               /* 图片地址*/
-	background-repeat: no-repeat;                               /* 图片不重复*/
-	background-size: cover;                                          /* 图片覆盖整个容器*/
-	background-position: center;                                  /* 图片居中显示*/
-	background-attachment: fixed;                               /* 背景图片固定不动*/
+	body {  
+	background-image: url('png/liuying.png');               /* 图片地址*/  
+	background-repeat: no-repeat;                               /* 图片不重复*/  
+	background-size: cover;                                          /* 图片覆盖整个容器*/  
+	background-position: center;                                  /* 图片居中显示*/	
+	background-attachment: fixed;                               /* 背景图片固定不动*/  
 	}
   </style>
   <link rel="stylesheet" type="text/css" href="css/文本.css">
@@ -18,40 +18,40 @@
   <link rel="stylesheet" type="text/css" href="css/侧边栏.css">
   <link rel="stylesheet" type="text/css" href="css/播放暂停按钮.css">
 </head>
-<body>
-  <div class="sidebar" id="sidebar">
-    <h2>歌曲清单</h2>
-    <ul id="songList">
-      <li><a href="#" data-song="sans" data-path="music/sans.mp3">sans</a></li>
-      <li><a href="#" data-song="See You Again" data-path="music/See You Again.mp3">See You Again</a></li>
-      <li><a href="#" data-song="Sold Out" data-path="music/Sold Out.mp3">Sold Out</a></li>
-      <li><a href="#" data-song="Something Just Like This" data-path="music/Something Just Like This.mp3">Something Just Like This</a></li>
-      <li><a href="#" data-song="Wake" data-path="music/Wake.mp3">Wake</a></li>
-      <li><a href="#" data-song="グランドエスケープ(逃离地面)" data-path="music/星辰大海.mp3">グランドエスケープ(逃离地面)</a></li>
-      <li><a href="#" data-song="伴你成长" data-path="music/伴你成长.mp3">伴你成长</a></li>
-      <li><a href="#" data-song="恋爱循环" data-path="music/恋爱循环.mp3">恋爱循环</a></li>
-      <li><a href="#" data-song="你的答案" data-path="music/你的答案.mp3">你的答案</a></li>
-      <li><a href="#" data-song="起风了" data-path="music/起风了.mp3">起风了</a></li>
-      <li><a href="#" data-song="生来倔强" data-path="music/生来倔强.mp3">生来倔强</a></li>
-      <li><a href="#" data-song="守护着我的光" data-path="music/守护着我的光.mp3">守护着我的光</a></li>
+<body>  
+  <div class="sidebar" id="sidebar">  
+    <h2>歌曲清单</h2>  
+    <ul id="songList">    
+      <li><a href="#" data-song="sans" data-path="music/sans.mp3">sans</a></li>      
+      <li><a href="#" data-song="See You Again" data-path="music/See You Again.mp3">See You Again</a></li>         
+      <li><a href="#" data-song="Sold Out" data-path="music/Sold Out.mp3">Sold Out</a></li> 
+      <li><a href="#" data-song="Something Just Like This" data-path="music/Something Just Like This.mp3">Something Just Like This</a></li> 
+      <li><a href="#" data-song="Wake" data-path="music/Wake.mp3">Wake</a></li> 
+      <li><a href="#" data-song="グランドエスケープ(逃离地面)" data-path="music/星辰大海.mp3">グランドエスケープ(逃离地面)</a></li> 
+      <li><a href="#" data-song="伴你成长" data-path="music/伴你成长.mp3">伴你成长</a></li> 
+      <li><a href="#" data-song="恋爱循环" data-path="music/恋爱循环.mp3">恋爱循环</a></li> 
+      <li><a href="#" data-song="你的答案" data-path="music/你的答案.mp3">你的答案</a></li> 
+      <li><a href="#" data-song="起风了" data-path="music/起风了.mp3">起风了</a></li> 
+      <li><a href="#" data-song="生来倔强" data-path="music/生来倔强.mp3">生来倔强</a></li> 
+      <li><a href="#" data-song="守护着我的光" data-path="music/守护着我的光.mp3">守护着我的光</a></li> 
       <li><a href="#" data-song="溯" data-path="music/溯.mp3">溯</a></li>
-      <li><a href="#" data-song="我的天空" data-path="music/我的天空.mp3">我的天空</a></li>
-      <li><a href="#" data-song="星辰大海" data-path="music/星辰大海.mp3">星辰大海</a></li>
-      <li><a href="#" data-song="一路向北" data-path="music/一路向北.mp3">一路向北</a></li>
-      <li><a href="#" data-song="最美的期待" data-path="music/最美的期待.mp3">最美的期待</a></li>
+      <li><a href="#" data-song="我的天空" data-path="music/我的天空.mp3">我的天空</a></li> 
+      <li><a href="#" data-song="星辰大海" data-path="music/星辰大海.mp3">星辰大海</a></li> 
+      <li><a href="#" data-song="一路向北" data-path="music/一路向北.mp3">一路向北</a></li> 
+      <li><a href="#" data-song="最美的期待" data-path="music/最美的期待.mp3">最美的期待</a></li> 
     </ul>
-  </div>
-      <script src="js/script.js"></script>
-
-  <h1><img id="rotatingImage" src="png/头像.png" alt="歌曲头像"></h1>
+  </div>  
+      <script src="js/script.js"></script>  
+    
+  <h1><img id="rotatingImage" src="png/头像.png" alt="歌曲头像"></h1>  
   <h2><strong id="songTitle">歌曲名称</strong></h2>
-  <h3><div class="control-bar">
-  <button id="prevBtn" class="control-btn">上一首</button>
-  <button id="playPauseBtn" class="control-btn">播放/暂停</button>
+  <h3><div class="control-bar">  
+  <button id="prevBtn" class="control-btn">上一首</button>  
+  <button id="playPauseBtn" class="control-btn">播放/暂停</button>  
   <button id="nextBtn" class="control-btn">下一首</button>
-   <audio id="audioPlayer" style="display: none;" controls>您的浏览器不支持音频元素</audio>
-  </div>
+   <audio id="audioPlayer" style="display: none;" controls>您的浏览器不支持音频元素</audio> 
+  </div>  
   </h3>
   <script src="js/music.js"></script>
-</body>
+</body>  
 </html>

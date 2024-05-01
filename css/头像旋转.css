@@ -1,0 +1,17 @@
+#rotatingImage {  
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            animation: rotation 15s infinite linear;
+            pointer-events: none;
+        }
+  
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(359deg);
+            }
+        }

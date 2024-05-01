@@ -1,0 +1,13 @@
+h1{  
+  text-align: center;  
+  color: #8a509f;  
+}
+
+h2{  
+  text-align:center;            /*居中*/
+  font-size:60px;                /*大小*/
+  color:#346c9c;                /*颜色*/
+  font-family:serif;            /*字体*/
+}
+
+h3{text-align:center}
